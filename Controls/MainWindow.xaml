@@ -1,0 +1,135 @@
+﻿<!--vgl. CodeBehind-->
+<Window x:Class="Controls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="616" Width="440">
+    <StackPanel>
+        <!--Labels besitzen, wie die meisten Controls und alle Container eine Content-Eigenschaft, welche
+        mit weiteren Containern/Controls befüllt werden können (Auch hier darf nur ein Root-Element vohanden sein).-->
+        <Label x:Name="Lbl_Output"
+               Content="Hallo, ich bin ein String"
+               Foreground="Red"
+               FontSize="25"
+               FontFamily="Comic Sans MS"
+               BorderBrush="Black"
+               BorderThickness="2"
+               HorizontalAlignment="Right"
+               Width="400"
+               HorizontalContentAlignment="Center"/>
+
+        <!--TextBlöcke sind Labels, welche auf Strings spezialisiert sind. Sie besitzen statt der
+            Content- die Text-Property-->
+        <TextBlock>
+            Hallo, <Underline>ich</Underline> bin <Bold>auch</Bold> ein String<LineBreak/>Moin Moin
+        </TextBlock>
+
+        <!--Buttons können von den Usern angeklickt werden, wodurch das Click-Event ausgelöst wird (vgl. CB)-->
+        <Button x:Name="Btn_KlickMich"
+                Content="Klick Mich"
+                Click="Btn_KlickMich_Click"
+                IsEnabled="True"
+                IsDefault="True"/>
+
+        <!--Mittels des Image-Objekts können Grafiken angezeigt und formatiert werden-->
+        <Image Height="60" Source="Images/ppedv.bmp"
+               Stretch="Uniform"/>
+
+        <!--In einer Textbox kann der User Strings eingeben. Mittels AcceptsReturn wird die Return-Taste für Zeilenumbrüche
+        freigegeben.-->
+        <TextBox x:Name="Tbx_Input"
+                 Margin="5"
+                 Height="60"
+                 AcceptsReturn="True"
+                 AcceptsTab="True"
+                 TextWrapping="WrapWithOverflow"
+                 KeyDown="Tbx_Input_KeyDown"
+                 IsReadOnly="True"
+                 Text="TestText">
+            <TextBox.ContextMenu>
+                <!--Die meisten Steuerelemente haben eine ContextMenu-Property, in welche ein ContextMenu eingepflegt werden kann (vgl. Menu).-->
+                <ContextMenu>
+                    <MenuItem Header="Kopiern"/>
+                    <MenuItem Header="Einfügen"/>
+                </ContextMenu>
+            </TextBox.ContextMenu>
+        </TextBox>
+
+        <!--ItemControls wie ComboBoxen oder ListViews können über die ItemsSource-Property mit Daten 
+        oder in XAML mit Items mit Content-Property bestückt werden-->
+        <ComboBox x:Name="Cbb_Auswahl"
+                  IsEditable="True">
+            <ComboBoxItem Content="Item1"/>
+            <ComboBoxItem Content="Auswahl2"/>
+            <ComboBoxItem Content="Eintrag3"/>
+        </ComboBox>
+
+        <!--Checkboxen sind visuelle Repräsentationen von boolschen Werten. Mittels IsThreeState kann eine Checkbox einen von DREI
+        unterschiedlichen Zuständen annehmen.-->
+        <CheckBox x:Name="Cbx_Haken"
+                  Content="Hak mich ab"
+                  IsChecked="{x:Null}"
+                  IsThreeState="True"/>
+
+        <!--RadioButtons können einer Group zugeordnet werden, wodurch nur einer der Buttons angewählt sein darf-->
+        <RadioButton Content="Auswahl1" GroupName="Rbt_Group_01"/>
+        <RadioButton Content="Auswahl2" GroupName="Rbt_Group_01"/>
+        <RadioButton Content="Auswahl3" GroupName="Rbt_Group_02"/>
+        <RadioButton Content="Auswahl4" GroupName="Rbt_Group_02"/>
+
+        <!--Mittels Slidern kann der User einen numerischen Wert im definierten Bereich auswählen. Die Ticks geben dabei Hilfestellung
+        und definieren die auswählbareb Zahlenwerte.-->
+        <Slider x:Name="Sdr_Wert"
+                Minimum="0"
+                Maximum="100"
+                TickPlacement="BottomRight"
+                TickFrequency="1"
+                IsSnapToTickEnabled="True"/>
+
+        <!--Seperatoren sind visuelle Abgrenzungen-->
+        <Separator Margin="10"/>
+
+        <!--Mittels der ProgressBar können prozentuale Fortschritte visualisiert werden. Mit IsIndeterminate kann ein bewegender Balken
+        dargestellt werden.-->
+        <ProgressBar Minimum="0" Maximum="100"
+                     Value="60"
+                     Height="20"
+                     IsIndeterminate="True"/>
+
+        <!--Menüs, wie ein Fenster-Menü (Menu) oder ein Kontext-Menü (ContextMenu) werden mit MenuItems befüllt.
+        Diese können ihrerseits weitere MenuItems aufnehmen, wodurch sich dann Untermenüs bilden-->
+        <Menu>
+            <MenuItem Header="_Datei">
+                <MenuItem Header="_Neu">
+                    <MenuItem Header="Neues _Fenster" Click="Fenster_Click"/>
+                    <MenuItem Header="Neuer _Dialog" Click="Dialog_Click"/>
+                </MenuItem>
+                <MenuItem Header="_Speichern"/>
+                <MenuItem Header="S_chließen" Click="Schließen_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Bearbeiten"/>
+        </Menu>
+
+        <!--Ribbons sind die 'neuen' MS-Menüs-->
+        <Ribbon>
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu>
+                    <RibbonApplicationMenuItem Header="Speichern"/>
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+
+            <RibbonTab Header="Ansicht">
+                <RibbonGroup Header="Listenansicht">
+                    <RibbonCheckBox/>
+                    <RibbonComboBox/>
+                    <RibbonButton/>
+                </RibbonGroup>
+            </RibbonTab>
+        </Ribbon>
+
+        <Button x:Name="Btn_Ok" Content="OK" Click="Btn_Ok_Click"/>
+    </StackPanel>
+</Window>

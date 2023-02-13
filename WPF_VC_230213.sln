@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M01_Grundlagen", "WPF_VC_230213\M01_Grundlagen.csproj", "{C1E62CB6-9259-4DAA-B7B5-176B3D1959A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M02_Controls", "Controls\M02_Controls.csproj", "{1AD796FE-1038-4D11-9FF2-C5DBAC6326F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1E62CB6-9259-4DAA-B7B5-176B3D1959A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1E62CB6-9259-4DAA-B7B5-176B3D1959A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1E62CB6-9259-4DAA-B7B5-176B3D1959A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1E62CB6-9259-4DAA-B7B5-176B3D1959A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AD796FE-1038-4D11-9FF2-C5DBAC6326F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AD796FE-1038-4D11-9FF2-C5DBAC6326F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AD796FE-1038-4D11-9FF2-C5DBAC6326F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AD796FE-1038-4D11-9FF2-C5DBAC6326F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {035AFF28-96C7-4D74-847A-EF2E6C0237E3}
+	EndGlobalSection
+EndGlobal
