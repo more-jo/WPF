@@ -51,8 +51,16 @@ namespace Controls
 
         private void Schließen_Click(object sender, RoutedEventArgs e)
         {
-            //Schließen des Fensters
-            this.Close();
+            if(MessageBox.Show
+                (
+                    "Soll das Programm wirklich geschlossen werden?",
+                    "Programm beenden",
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Question
+                ) == MessageBoxResult.Yes)
+
+                //Schließen des Fensters
+                this.Close();
         }
 
         private void Fenster_Click(object sender, RoutedEventArgs e)
