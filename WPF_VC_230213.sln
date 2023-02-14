@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M01_Grundlagen", "Grundlage
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{009E4818-6A2D-4CB9-9BFB-B819256C22BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Container", "Container\Container.csproj", "{10397FE7-EBF9-4013-ACF0-F553B17C051B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M03_Container", "Container\M03_Container.csproj", "{10397FE7-EBF9-4013-ACF0-F553B17C051B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M04_EventRouting", "EventRouting\M04_EventRouting.csproj", "{10E5A09A-682A-4FE9-BF44-CD8580ED4334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyBindings", "PropertyBindings\PropertyBindings.csproj", "{751C3EE7-0453-4C58-B075-41A461AA3CD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{10397FE7-EBF9-4013-ACF0-F553B17C051B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10397FE7-EBF9-4013-ACF0-F553B17C051B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10397FE7-EBF9-4013-ACF0-F553B17C051B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10E5A09A-682A-4FE9-BF44-CD8580ED4334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E5A09A-682A-4FE9-BF44-CD8580ED4334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E5A09A-682A-4FE9-BF44-CD8580ED4334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E5A09A-682A-4FE9-BF44-CD8580ED4334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{751C3EE7-0453-4C58-B075-41A461AA3CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{751C3EE7-0453-4C58-B075-41A461AA3CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{751C3EE7-0453-4C58-B075-41A461AA3CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{751C3EE7-0453-4C58-B075-41A461AA3CD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

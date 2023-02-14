@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Container
+namespace PropertyBindings
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,12 +23,6 @@ namespace Container
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            //Codeseitiger Schreib-Zugriff auf eine Attached-Property des Canvas
-            Canvas.SetLeft(Rct_Blue, 50);
         }
     }
 }
