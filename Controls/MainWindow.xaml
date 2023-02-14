@@ -47,8 +47,9 @@
                  AcceptsTab="True"
                  TextWrapping="WrapWithOverflow"
                  KeyDown="Tbx_Input_KeyDown"
-                 IsReadOnly="True"
-                 Text="TestText">
+                 IsReadOnly="False"
+                 Text="TestText"
+                 VerticalScrollBarVisibility="Visible">
             <TextBox.ContextMenu>
                 <!--Die meisten Steuerelemente haben eine ContextMenu-Property, in welche ein ContextMenu eingepflegt werden kann (vgl. Menu).-->
                 <ContextMenu>

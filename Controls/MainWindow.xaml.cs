@@ -51,7 +51,8 @@ namespace Controls
 
         private void Schließen_Click(object sender, RoutedEventArgs e)
         {
-            if(MessageBox.Show
+            //Anzeigen einer MessageBox und Abfrage des geklickten Buttons
+            if (MessageBox.Show
                 (
                     "Soll das Programm wirklich geschlossen werden?",
                     "Programm beenden",
@@ -61,6 +62,9 @@ namespace Controls
 
                 //Schließen des Fensters
                 this.Close();
+
+            //Beenden der Applikation
+            //Application.Current.Shutdown();
         }
 
         private void Fenster_Click(object sender, RoutedEventArgs e)
