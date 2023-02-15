@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M02_Controls", "Controls\M0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M01_Grundlagen", "Grundlagen\M01_Grundlagen.csproj", "{58F92073-4D33-4450-B1F0-A8C768C7C0CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{009E4818-6A2D-4CB9-9BFB-B819256C22BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{009E4818-6A2D-4CB9-9BFB-B819256C22BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M03_Container", "Container\M03_Container.csproj", "{10397FE7-EBF9-4013-ACF0-F553B17C051B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M03_Container", "Container\M03_Container.csproj", "{10397FE7-EBF9-4013-ACF0-F553B17C051B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M04_EventRouting", "EventRouting\M04_EventRouting.csproj", "{10E5A09A-682A-4FE9-BF44-CD8580ED4334}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M04_EventRouting", "EventRouting\M04_EventRouting.csproj", "{10E5A09A-682A-4FE9-BF44-CD8580ED4334}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyBindings", "PropertyBindings\PropertyBindings.csproj", "{751C3EE7-0453-4C58-B075-41A461AA3CD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M05_PropertyBindings", "PropertyBindings\M05_PropertyBindings.csproj", "{751C3EE7-0453-4C58-B075-41A461AA3CD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{2BFA78AE-59B9-40F0-87CC-9C015580D2D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{751C3EE7-0453-4C58-B075-41A461AA3CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{751C3EE7-0453-4C58-B075-41A461AA3CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{751C3EE7-0453-4C58-B075-41A461AA3CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BFA78AE-59B9-40F0-87CC-9C015580D2D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFA78AE-59B9-40F0-87CC-9C015580D2D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFA78AE-59B9-40F0-87CC-9C015580D2D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFA78AE-59B9-40F0-87CC-9C015580D2D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
