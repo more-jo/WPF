@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M08_Templates", "Templates\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M09_Validation", "Validation\M09_Validation.csproj", "{E1EC01F0-8E95-4FB8-AE57-69015240E567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelativeSources", "RelativeSources\RelativeSources.csproj", "{AD3DFB97-FFEF-4C43-8340-6DCFB2F9A3A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M12_RelativeSources", "RelativeSources\M12_RelativeSources.csproj", "{AD3DFB97-FFEF-4C43-8340-6DCFB2F9A3A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
