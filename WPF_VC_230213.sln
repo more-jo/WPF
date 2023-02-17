@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M07_Resources_Styles", "Res
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M08_Templates", "Templates\M08_Templates.csproj", "{B733ADF9-6F93-42FF-B3E7-721F039E6B98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "Validation\Validation.csproj", "{E1EC01F0-8E95-4FB8-AE57-69015240E567}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M09_Validation", "Validation\M09_Validation.csproj", "{E1EC01F0-8E95-4FB8-AE57-69015240E567}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelativeSources", "RelativeSources\RelativeSources.csproj", "{AD3DFB97-FFEF-4C43-8340-6DCFB2F9A3A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{E1EC01F0-8E95-4FB8-AE57-69015240E567}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1EC01F0-8E95-4FB8-AE57-69015240E567}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1EC01F0-8E95-4FB8-AE57-69015240E567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3DFB97-FFEF-4C43-8340-6DCFB2F9A3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3DFB97-FFEF-4C43-8340-6DCFB2F9A3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3DFB97-FFEF-4C43-8340-6DCFB2F9A3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3DFB97-FFEF-4C43-8340-6DCFB2F9A3A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
