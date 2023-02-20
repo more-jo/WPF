@@ -1,0 +1,42 @@
+﻿<Window x:Class="Trigger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trigger"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="514" Width="491">
+    
+    <StackPanel Margin="10">
+
+        <TextBlock FontSize="30">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Text" Value="UNWAHR"/>
+                    <Setter Property="Foreground" Value="Red"/>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="TextDecorations" Value="Underline"/>
+                            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Trigger>
+
+                        <DataTrigger Binding="{Binding BoolVal}" Value="True">
+                            <Setter Property="Text" Value="Wahr"/>
+                            <Setter Property="Foreground" Value="Green"/>
+                        </DataTrigger>
+
+                        <DataTrigger Binding="{Binding ElementName=Btn_Change, Path=IsMouseOver}" Value="True">
+                            <Setter Property="Foreground" Value="Gold"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+        <Button Content="Ändere Bool" x:Name="Btn_Change" Click="Btn_Change_Click"/>
+
+    </StackPanel>
+    
+</Window>
