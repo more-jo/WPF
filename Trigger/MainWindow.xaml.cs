@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UserControls;
 
 namespace Trigger
 {
@@ -21,22 +22,35 @@ namespace Trigger
     /// </summary>
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        public bool BoolVal { get; set; }
+
+
         public MainWindow()
         {
             InitializeComponent();
 
-            this.DataContext= this;
+            this.BoolVal = true;
+
+            //Setzen des DataContext
+            this.DataContext = this;
         }
 
-        public bool BoolVal { get; set; }
-
-        public event PropertyChangedEventHandler? PropertyChanged;
-
-        private void Btn_Change_Click(object sender, RoutedEventArgs e)
+        //EventHandler zum Ändern der Property
+        private void Btn_Ändern_Click(object sender, RoutedEventArgs e)
         {
             BoolVal = !BoolVal;
 
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(BoolVal)));
+        }
+
+        private void colorPicker_PickedColorChanged(object sender, RoutedPropertyChangedEventArgs<SolidColorBrush> e)
+        {
+            ((sender as ColorPicker).MyContent as ContentControl).Content = (sender as ColorPicker).PickedColor.Color.ToString();
+
+            if ((sender as ColorPicker).PickedColor.Color == Colors.Black)
+                MessageBox.Show($"Alles ist schwarz\nCount:{ColorPicker.GetCount((sender as ColorPicker).MyContent as Button)}");
         }
     }
 }

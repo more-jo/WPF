@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M09_Validation", "Validatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M12_RelativeSources", "RelativeSources\M12_RelativeSources.csproj", "{AD3DFB97-FFEF-4C43-8340-6DCFB2F9A3A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trigger", "Trigger\Trigger.csproj", "{2A2A8EFD-5090-438E-9935-65CEFE0E70FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M10_Trigger", "Trigger\M10_Trigger.csproj", "{2A2A8EFD-5090-438E-9935-65CEFE0E70FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControls", "UserControls\UserControls.csproj", "{A96744A8-A024-4D28-A318-5FC139E5AFAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{2A2A8EFD-5090-438E-9935-65CEFE0E70FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A2A8EFD-5090-438E-9935-65CEFE0E70FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A2A8EFD-5090-438E-9935-65CEFE0E70FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96744A8-A024-4D28-A318-5FC139E5AFAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96744A8-A024-4D28-A318-5FC139E5AFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96744A8-A024-4D28-A318-5FC139E5AFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96744A8-A024-4D28-A318-5FC139E5AFAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
