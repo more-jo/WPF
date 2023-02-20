@@ -66,6 +66,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -80,6 +81,8 @@
                    Grid.Row="4"/>
         <TextBlock Text="Geschlecht:" 
                    Grid.Row="5"/>
+        <TextBlock Text="Anzahl Kinder:" 
+                   Grid.Row="6"/>
 
         <TextBox x:Name="Tbx_Vorname"
                  Grid.Column="1"
@@ -135,7 +138,12 @@
 
         </StackPanel>
 
-        <WrapPanel Grid.Row="6" Grid.ColumnSpan="2"
+        <local:IntegerUpDown x:Name="Iud_Kinder" 
+                          Grid.Row="6" Grid.Column="1" Margin="2"
+                          Value="{Binding Kinder, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}"
+                          Validation.ErrorTemplate="{StaticResource CtpError}"/>
+
+        <WrapPanel Grid.Row="7" Grid.ColumnSpan="2"
                    HorizontalAlignment="Right" Margin="0,5">
             
             <Button x:Name="Btn_Ok"
@@ -153,6 +161,7 @@
                                     <Condition Binding="{Binding ElementName=Tbx_Nachname, Path=(Validation.HasError)}" Value="False"/>
                                     <Condition Binding="{Binding ElementName=Dpr_Geburtsdatum, Path=(Validation.HasError)}" Value="False"/>
                                     <Condition Binding="{Binding ElementName=Cbb_Lieblingsfarbe, Path=(Validation.HasError)}" Value="False"/>
+                                    <Condition Binding="{Binding ElementName=Iud_Kinder, Path=(Validation.HasError)}" Value="False"/>
                                 </MultiDataTrigger.Conditions>
 
                                 <Setter Property="IsEnabled" Value="True"/>

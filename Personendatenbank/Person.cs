@@ -30,6 +30,9 @@ namespace Personendatenbank
 
         private Gender geschlecht;
         public Gender Geschlecht { get => geschlecht; set { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Geschlecht))); geschlecht = value; } }
+        
+        private int kinder;
+        public int Kinder { get => kinder; set { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Kinder))); kinder = value; } }
 
         public string Error => null;
 
@@ -59,6 +62,10 @@ namespace Personendatenbank
 
                     case nameof(Lieblingsfarbe):
                         if (Lieblingsfarbe.ToString().Equals("#00000000")) return "Wählen Sie Ihre Lieblingsfarbe aus.";
+                        break;
+
+                    case nameof(Kinder):
+                        if (Kinder < 0) return "Dieser Wert muss mindestens '0' sein.";
                         break;
                 }
 
