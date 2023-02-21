@@ -32,7 +32,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <Label x:Name="Lbl_MyContent" Content="{Binding ElementName=Uc_Main, Path=MyContent}" Grid.ColumnSpan="3" HorizontalAlignment="Center"/>
+            <Label x:Name="Lbl_MyContent" Content="{Binding ElementName=Uc_Colorpicker, Path=MyContent}" Grid.ColumnSpan="3" HorizontalAlignment="Center"/>
 
             <TextBlock Text="R:" Foreground="Red" Grid.Row="1"/>
             <Slider Grid.Column="1"  Grid.Row="1"
@@ -83,10 +83,10 @@
 
             <Border BorderBrush="Black" BorderThickness="1" 
                 Width="100" Height="100"
-                Grid.Row="5" Grid.ColumnSpan="3">
+                Grid.Row="6" Grid.ColumnSpan="3">
 
                 <Border.Visibility>
-                    <Binding ElementName="Uc_ColorPicker" Path="ShowRectangle">
+                    <Binding ElementName="Uc_Colorpicker" Path="ShowRectangle">
                         <Binding.Converter>
                             <BooleanToVisibilityConverter/>
                         </Binding.Converter>
