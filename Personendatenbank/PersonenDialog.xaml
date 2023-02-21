@@ -148,7 +148,8 @@
             
             <Button x:Name="Btn_Ok"
                     Content="OK"
-                    Click="Btn_Ok_Click">
+                    Click="Btn_Ok_Click"
+                    IsDefault="True">
                 <Button.Style>
                     <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
 
