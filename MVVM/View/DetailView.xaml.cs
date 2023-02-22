@@ -13,14 +13,11 @@ using System.Windows.Shapes;
 namespace MVVM.View
 {
     /// <summary>
-    /// Interaction logic for StartView.xaml
+    /// Interaction logic for DetailView.xaml
     /// </summary>
-    public partial class StartView : Window
+    public partial class DetailView : Window
     {
-        //Außer dem Konstruktor mit der InitializeComponent()-Methode
-        //sollte im CodeBehind der xaml-Dateien nicht stehen
-
-        public StartView()
+        public DetailView()
         {
             InitializeComponent();
         }
